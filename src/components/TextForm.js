@@ -57,41 +57,44 @@ export default function TextForm(props) {
             }}
           />
         </div>
-        <button
-          disabled={text.length === 0}
-          className="btn btn-success"
-          onClick={handleUpper}
-        >
-          Convert to Uppercase
-        </button>
-        <button
-          disabled={text.length === 0}
-          className="btn btn-success mx-3"
-          onClick={handleLower}
-        >
-          Convert to Lowercase
-        </button>
-        <button
-          disabled={text.length === 0}
-          className="btn btn-success"
-          onClick={handleClear}
-        >
-          Clear Text
-        </button>
-        <button
-          disabled={text.length === 0}
-          className="btn btn-success mx-3"
-          onClick={handleCopy}
-        >
-          Copy Text
-        </button>
-        <button
-          disabled={text.length === 0}
-          className="btn btn-success"
-          onClick={handleExtraSpace}
-        >
-          Remove Extra Spaces
-        </button>
+
+        <div className="d-grid gap-2 d-md-block">
+          <button
+            disabled={text.length === 0}
+            className="btn btn-success mx-2"
+            onClick={handleUpper}
+          >
+            Convert to Uppercase
+          </button>
+          <button
+            disabled={text.length === 0}
+            className="btn btn-success mx-2"
+            onClick={handleLower}
+          >
+            Convert to Lowercase
+          </button>
+          <button
+            disabled={text.length === 0}
+            className="btn btn-success mx-2"
+            onClick={handleClear}
+          >
+            Clear Text
+          </button>
+          <button
+            disabled={text.length === 0}
+            className="btn btn-success mx-2"
+            onClick={handleCopy}
+          >
+            Copy Text
+          </button>
+          <button
+            disabled={text.length === 0}
+            className="btn btn-success mx-2"
+            onClick={handleExtraSpace}
+          >
+            Remove Extra Spaces
+          </button>
+        </div>
       </div>
       <div
         className="container my-5"
